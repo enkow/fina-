@@ -1,0 +1,37 @@
+<template>
+	<TextInput v-model="value" class="search" />
+</template>
+<style scoped>
+.search {
+	@apply w-full border !border-gray-2 pl-12;
+	background: transparent
+		url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 19 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.91537 14.2702C9.32056 14.2699 10.6853 13.7995 11.7922 12.9338L15.2723 16.414L16.3917 15.2946L12.9116 11.8144C13.7777 10.7074 14.2484 9.3424 14.2487 7.93685C14.2487 4.44481 11.4074 1.60352 7.91537 1.60352C4.42332 1.60352 1.58203 4.44481 1.58203 7.93685C1.58203 11.4289 4.42332 14.2702 7.91537 14.2702ZM7.91537 3.18685C10.535 3.18685 12.6654 5.31722 12.6654 7.93685C12.6654 10.5565 10.535 12.6868 7.91537 12.6868C5.29574 12.6868 3.16536 10.5565 3.16536 7.93685C3.16536 5.31722 5.29574 3.18685 7.91537 3.18685Z' fill='%239AA1B3'/%3E%3Cpath d='M9.03477 6.816C9.33481 7.11683 9.50027 7.51424 9.50027 7.93541H11.0836C11.0843 7.51933 11.0025 7.10724 10.843 6.72296C10.6835 6.33868 10.4494 5.98983 10.1542 5.69658C8.9556 4.49958 6.87748 4.49958 5.67969 5.69658L6.79752 6.81758C7.39919 6.2175 8.43627 6.21908 9.03477 6.816Z' fill='%239AA1B3'/%3E%3C/svg%3E")
+		no-repeat;
+	background-position: 18px;
+}
+</style>
+
+<script lang="ts" setup>
+import { watchDebounced } from '@vueuse/core';
+import TextInput from '@/Components/Auth/TextInput.vue';
+import { Ref, ref } from 'vue';
+import { useQueryString } from '@/Composables/useQueryString';
+import { useTableQueryString } from '@/Composables/useTableQueryString';
+
+const { queryValue } = useQueryString();
+const { searchRedirect } = useTableQueryString();
+
+const props = defineProps<{
+	tableName: string;
+}>();
+
+const value: Ref<string> = ref(queryValue(window.location.search, `searcher[${props.tableName}]`));
+
+watchDebounced(
+	value,
+	() => {
+		searchRedirect(props.tableName, value);
+	},
+	{ debounce: 500, maxWait: 5000 },
+);
+</script>

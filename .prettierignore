@@ -1,0 +1,9 @@
+/node_modules
+/public/*
+/storage/*
+/vendor
+Homestead.json
+Homestead.yaml
+auth.json
+rr
+.rr.yaml

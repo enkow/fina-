@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Διακανονισμός',
+	'plural' => 'Διακανονισμός',
+	'online-payments' => 'Ηλεκτρονικές πληρωμές',
+	'daily-reports' => 'daily-reports',
+	'bookgame-settlements' => 'Διακανονισμός BookGame',
+	'status' => [
+		0 => 'σε εκκρεμότητα',
+		1 => 'αποδεκτή',
+		2 => 'απορρίφθηκε',
+	],
+	'settlement-from-month' => 'Διακανονισμός από-μήνα :month',
+	'download-vat-invoice' => 'Λήψη τιμολογίου ΦΠΑ',
+	'show-reservations' => 'Προβολή κρατήσεων',
+	'reservation-turnover' => 'Έσοδα από κρατήσεις :status',
+	'reservation-fee' => 'Επιτροπή κράτησης :status',
+	'paid-online-reservation-fee' => 'Προμήθεια κράτησης :status που καταβάλλεται online',
+	'paid-in-club-reservation-fee' => 'Προμήθεια για κρατήσεις :status που καταβάλλεται στο κλαμπ',
+	'unpaid-reservation-fee' => 'Προμήθειες για κρατήσεις :status απλήρωτη',
+	'tpay-reservation-fee' => 'TPay προμήθεια για κρατήσεις :status',
+	'summary' => 'Περίληψη',
+	'online-paid-online-reservation-turnover' => 'online-πληρωμένη-online-κράτηση-έσοδα',
+	'subscription-fee' => 'Τέλος συνδρομής',
+	'marketing-campaign-fee' => 'Αμοιβή εκστρατείας μάρκετινγκ',
+	'sms-fee' => 'Τέλος SMS',
+	'fee-info' => 'πληροφορίες για την αμοιβή',
+	'tpay-fee-single' => 'Προμήθεια :paymentProvider σε κάθε ηλεκτρονική συναλλαγή',
+	'bookbil-fee' => 'Προμήθεια BookGame',
+];

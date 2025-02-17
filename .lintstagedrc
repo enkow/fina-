@@ -1,0 +1,3 @@
+{
+	"*.{js,ts,php,json,vue,yml,css,pcss}": ["npx prettier --write"]
+}

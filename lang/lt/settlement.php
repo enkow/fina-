@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Atsiskaitymas',
+	'plural' => 'Atsiskaitymai',
+	'online-payments' => 'Online mokėjimai',
+	'daily-reports' => 'Kasdieniniai ataskaitos',
+	'bookgame-settlements' => 'BookGame apskaitos',
+	'status' => [
+		'0' => 'laukiama',
+		'1' => 'priimta',
+		'2' => 'atmesta',
+	],
+	'settlement-from-month' => 'Apskaita nuo mėnesio :month',
+	'download-vat-invoice' => 'Atsisiųsti PVM sąskaitą faktūrą',
+	'show-reservations' => 'Rodyti rezervacijas',
+	'reservation-turnover' => 'Rezervacijos apyvarta :status',
+	'reservation-fee' => 'Rezervacijos mokestis :status',
+	'paid-online-reservation-fee' => 'Rezervacijos mokestis :status sumokėtas internetu',
+	'paid-in-club-reservation-fee' => 'Rezervacijos mokestis :status sumokėtas klube',
+	'unpaid-reservation-fee' => 'Neapmokėtas rezervacijos mokestis :status',
+	'tpay-reservation-fee' => 'TPay rezervacijos mokestis :status',
+	'summary' => 'Suvestinė',
+	'online-paid-online-reservation-turnover' => 'Online sumokėta rezervacijų apyvarta',
+	'subscription-fee' => 'Prenumeratos mokestis',
+	'marketing-campaign-fee' => 'Marketingo kampanijos mokestis',
+	'sms-fee' => 'SMS mokestis',
+	'fee-info' => 'Mokesčių informacija',
+	'tpay-fee-single' => 'Mokesčiai :paymentProvider už kiekvieną internetinę transakciją',
+	'bookbil-fee' => 'Bookgame komisija',
+];

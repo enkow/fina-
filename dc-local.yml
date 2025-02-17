@@ -1,0 +1,59 @@
+version: '3.5'
+
+services:
+  bookgame:
+    build:
+      context: '.'
+      dockerfile: Dockerfile-local
+      args:
+        uid: 1111
+    container_name: bookgame
+    environment:
+      - APACHE_RUN_USER=#1111
+      - APACHE_RUN_GROUP=#1111
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8000:80
+    links:
+      - bookgamedb      
+    networks:
+      backend:
+        aliases:
+          - bookgame
+
+  bookgamedb:
+    image: mysql:8.0
+    container_name: bookgamedb
+    volumes:
+      - ./run/var:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=securerootpassword
+      - MYSQL_DATABASE=bg
+      - MYSQL_USER=bg
+      - MYSQL_PASSWORD=S.M9!u6shiAwNmf_
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - 3306:3306
+    networks:
+      backend:
+        aliases:
+          - bookgamedb
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      links:
+        - bookgamedb
+      environment:
+        PMA_HOST: bookgamedb
+        PMA_PORT: 3306
+      ports:
+        - '8081:80'
+      networks:
+        backend:
+          aliases:
+            - phpmyadmin          
+
+networks:
+  backend:
+    name: bookgamenetwork

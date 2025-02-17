@@ -1,0 +1,16 @@
+<template>
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M7 13L3 9L7 5"
+			stroke="currentColor"
+			stroke-width="3"
+			stroke-linecap="round"
+			stroke-linejoin="round" />
+		<path
+			d="M11 19H16C18.7614 19 21 16.7614 21 14C21 11.2386 18.7614 9 16 9H3"
+			stroke="currentColor"
+			stroke-width="3"
+			stroke-linecap="round"
+			stroke-linejoin="round" />
+	</svg>
+</template>

@@ -1,0 +1,37 @@
+.toggle-container:focus {
+	@apply !shadow-none;
+}
+
+.toggle {
+	--toggle-duration: 300ms;
+	--toggle-width: 120px;
+	--toggle-height: 28px;
+	--toggle-bg-off: #f64e4e;
+	--toggle-bg-on: #1bc5bd;
+	--toggle-border-on: transparent;
+	--toggle-border-off: transparent;
+
+	&.toggle-on .toggle-label {
+		@apply !pl-2.5;
+	}
+
+	&.toggle-off .toggle-label {
+		@apply !pr-1.5;
+	}
+
+	.toggle-label {
+		@apply text-xs font-bold uppercase text-white;
+	}
+
+	.toggle-handle {
+		@apply mt-1 !h-5 !w-5;
+	}
+
+	.toggle-handle-on {
+		left: calc(100% - 4px) !important;
+	}
+
+	.toggle-handle-off {
+		@apply !left-1;
+	}
+}

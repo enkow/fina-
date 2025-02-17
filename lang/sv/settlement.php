@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Avräkning',
+	'plural' => 'Avräkning',
+	'online-payments' => 'Betalningar online',
+	'daily-reports' => 'dagliga rapporter',
+	'bookgame-settlements' => 'BookGame-uppgörelse',
+	'status' => [
+		'0' => 'väntande',
+		'1' => 'accepterad',
+		'2' => 'avvisad',
+	],
+	'settlement-from-month' => 'Avräkning från månad :månad',
+	'download-vat-invoice' => 'Ladda ner momsfaktura',
+	'show-reservations' => 'Visa reservationer',
+	'reservation-turnover' => 'Reservation omsättning :status',
+	'reservation-fee' => 'Reservationsavgift :status',
+	'paid-online-reservation-fee' => 'Provision för bokningar :status som betalats online',
+	'paid-in-club-reservation-fee' => 'Provision för bokningar :status betald på klubb',
+	'unpaid-reservation-fee' => 'Provision för bokningar :status obetald',
+	'tpay-reservation-fee' => 'TPay-provision för bokningar :status',
+	'summary' => 'Sammanfattning',
+	'online-paid-online-reservation-turnover' => 'online-paid-online-reservation-turnover',
+	'subscription-fee' => 'Abonnemangsavgift',
+	'marketing-campaign-fee' => 'Avgift för marknadsföringskampanjer',
+	'sms-fee' => 'SMS-avgift',
+	'fee-info' => 'Information om provision',
+	'tpay-fee-single' => 'Provision :paymentProvider på varje online-transaktion',
+	'bookbil-fee' => 'Bookbil-avgift',
+];

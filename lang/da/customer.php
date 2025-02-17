@@ -1,0 +1,38 @@
+<?php
+
+return [
+	'singular' => 'Kunde',
+	'plural' => 'Kunder',
+	'nav-parent' => 'Kunder',
+	'user-list' => 'Brugerliste',
+	'customer-details' => 'Kundeoplysninger',
+	'presence' => 'Tilstedeværelse',
+	'hour-count' => 'Antal timer',
+	'reservation-count' => 'Antal reservationer',
+	'reservation-amount' => 'Beløb for reservation',
+	'turnover-from-reservations-short' => 'Indtægter',
+	'no-results' => 'Ingen resultater',
+	'filter' => [
+		0 => 'Alle kunder',
+		1 => 'Nye kunder',
+		2 => 'Mest loyale',
+		3 => 'Inaktiv',
+		4 => 'Første besøg',
+	],
+	'filter-tooltip' => [
+		1 => 'Det er de kunder, der besøger dig for første gang.',
+		2 => 'Det er kunder, der har haft mindst 2 bookinger inden for de sidste 90 dage.',
+		3 => 'Det er kunder, der ikke har været mindst 30 dage',
+		4 => 'Dette er kunder, der har haft 1 booking inden for de sidste 30 dage.',
+	],
+	'last-reservation' => 'Sidste reservation',
+	'marketing-consent' => 'Samtykke til markedsføring',
+	'marketing-consents' => 'Samtykke til markedsføring',
+	'edit-customer' => 'Rediger bruger',
+	'add-new' => 'Tilføj ny',
+	'reservation-list' => 'Kunder',
+	'successfully-stored' => 'Tilføjet ny kunde',
+	'successfully-updated' => 'Opdaterede kundeoplysninger',
+	'successfully-destroyed' => 'Slettet kunde',
+	'agreement-status-successfully-synced' => 'Samtykkestatus er blevet opdateret',
+];

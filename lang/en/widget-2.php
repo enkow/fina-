@@ -1,0 +1,56 @@
+<?php
+
+return [
+	'book' => 'Book',
+	'system-delivered-by' => 'System delivered by',
+	'start-over' => 'Start over',
+	'previous-step' => 'Previous step',
+	'next-step' => 'Next step',
+	'choose-all-required-data' => 'Choose all required data',
+	'choose-a-special-offer' => 'Choose a special offer',
+	'choose-date' => 'Choose date',
+	'booking-details' => 'Booking details',
+	'select-an-hour' => 'Select an hour',
+	'empty-search-criteria' =>
+		'Sorry, we did not find search results for your criteria. Try to change the search criteria.',
+	'back' => 'Back',
+	'choose-addons' => 'Choose addons',
+	'sign-in-to-pay' => 'Sign in to pay',
+	'sign-in' => 'Sign in',
+	'sign-up' => 'Sign up',
+	'forgot-password' => 'Forgot password',
+	'email' => 'Email',
+	'password' => 'Password',
+	'first-name' => 'First name',
+	'last-name' => 'Last name',
+	'accept' => 'Accept',
+	'terms' => 'terms',
+	'and' => 'and',
+	'privacy-policy' => 'privacy policy',
+	'marketing-consent' => 'marketing consent',
+	'forgot-password-success' =>
+		'We have sent a link to reset your password to your email address. Do not close this tab and return to it once the password change process is complete.',
+	'forgot-password-content' =>
+		'Have you forgotten your password? Nothing is lost. We will send a link to your email where you can set a new password on your account.',
+	'send-link' => 'Send link',
+	'back-to-login' => 'Back to login',
+	'verify-yourself-to-complete-your-reservation' => 'Verify yourself to complete your reservation.',
+	'resubmit' => 'Resubmit',
+	'verification-link-has-been-resent' => 'The verification link has been resent',
+	'account-verification-success' =>
+		'Your account has been successfully registered. We have sent an email with a verification link to your email address.',
+	'enter-your-order-details' => 'Enter your order details',
+	'phone-short' => 'Tel',
+	'continue' => 'Continue',
+	'online-payment' => 'Book and pay online',
+	'offline-payment' => 'Book and pay at the club',
+	'payment-alert' =>
+		'You have 5 minutes to pay for your reservation.<br>Remember - You will receive confirmation of the reservation to your e-mail address.',
+	'message' => 'Message',
+	'coupon-code' => 'Coupon code',
+	'correct-code' => 'correct code',
+	'incorrect-code' => 'incorrect code',
+	'status-of-your-booking' => 'Status of your booking',
+	'status-alert' =>
+		'To track and manage your reservations, go to your user panel.<br>You will also receive booking confirmation to your email address.',
+];

@@ -1,0 +1,77 @@
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/roboto';
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/600.css';
+
+@import 'vue-select/dist/vue-select.css';
+@import 'tippy.js/dist/tippy.css';
+
+@import 'accordion.pcss';
+@import 'colorpicker.pcss';
+@import 'datepicker.pcss';
+@import 'fullcalendar.pcss';
+@import 'modal.pcss';
+@import 'scrollbar.pcss';
+@import 'table.pcss';
+@import 'tippy.pcss';
+@import 'toggle.pcss';
+@import 'tagify.pcss';
+@import 'select.pcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply w-full !overflow-x-hidden overflow-y-scroll bg-gray-1 bg-gray-10;
+}
+
+h2 {
+	@apply mb-3 mt-1 text-[28px] font-medium leading-9;
+}
+
+.input-group {
+	@apply space-y-2;
+}
+
+.error {
+	@apply mt-1 text-sm text-danger-dark;
+}
+
+.success {
+	@apply text-sm text-brand-dark;
+}
+
+/*
+    Card
+ */
+
+.card {
+	@apply w-full rounded-md bg-white px-9 py-7;
+
+	.card-header {
+		@apply mb-7 text-cardHeader font-semibold leading-10;
+	}
+
+	.card-body {
+		@apply text-sm;
+	}
+}
+
+@layer utilities {
+	.moz-appearance-textfield {
+		-moz-appearance: textfield;
+	}
+
+	.overflow-clip-margin-screen {
+		overflow-clip-margin: 100vh;
+	}
+
+	.widget-2-scrollbar {
+		@apply pr-2 scrollbar scrollbar-track-ui-green-100 scrollbar-thumb-ui-green scrollbar-track-rounded-full scrollbar-thumb-rounded-full scrollbar-w-1;
+	}
+}

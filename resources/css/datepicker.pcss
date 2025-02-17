@@ -1,0 +1,90 @@
+.simpleDatepicker {
+	.dp__instance_calendar {
+		@apply px-5 py-3;
+		font-family: 'Poppins' !important;
+
+		.dp__selection_preview,
+		.vs__search,
+		.dp__calendar_header_separator {
+			@apply hidden;
+		}
+
+		.vs__dropdown-toggle {
+			@apply border-0;
+		}
+
+		.dp__calendar_item {
+			@apply m-1.25;
+
+			.dp__cell_inner {
+				@apply flex h-6 w-6 text-sm;
+
+				&.dp__range_start {
+					@apply bg-brand-base;
+				}
+
+				&.dp__range_end {
+					@apply bg-brand-base;
+				}
+
+				&.dp__range_between {
+					@apply relative bg-brand-light;
+				}
+
+				&:not(.dp__cell_disabled).dp__range_between:after,
+				&:not(.dp__cell_disabled):not(.dp__range_end).dp__range_start:after {
+					@apply absolute -right-[11px] block h-6 w-2.5 bg-brand-light content-[''];
+				}
+
+				&.dp__active_date {
+					@apply bg-brand-base;
+				}
+
+				&.dp__cell_disabled {
+					@apply rounded-lg bg-gray-3/10 text-gray-5;
+				}
+
+				&.dp__today {
+					@apply border border-brand-base;
+				}
+			}
+
+			&:last-child .dp__range_between:after {
+				@apply bg-transparent;
+			}
+		}
+
+		.dp__calendar_header {
+			@apply mt-3 border-t border-t-gray-3/50;
+
+			.dp__calendar_header_item {
+				@apply m-1.5 h-6 w-6 px-0 text-center text-xs font-semibold;
+			}
+		}
+	}
+
+	.dp__preset_ranges {
+		@apply ml-8 mt-6 space-y-1.5;
+
+		.dp__preset_range {
+			@apply mr-8 w-34.5 rounded-md border border-solid border-brand-base text-center text-xs font-medium text-brand-base;
+			@apply transition hover:bg-brand-base hover:text-white;
+		}
+	}
+
+	.dp__selection_preview {
+		@apply text-gray-5;
+	}
+
+	.dp__cancel {
+		@apply hidden;
+	}
+
+	.dp__select {
+		@apply bg-brand-base px-3 py-1 font-medium text-white;
+	}
+
+	.dp__overlay_cell_active {
+		@apply bg-brand-base font-bold;
+	}
+}

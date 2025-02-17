@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Siedlung',
+	'plural' => 'Abrechnung',
+	'online-payments' => 'Online-Zahlungen',
+	'daily-reports' => 'daily-reports',
+	'bookgame-settlements' => 'BookGame settlement',
+	'status' => [
+		'0' => 'schwebend',
+		'1' => 'akzeptiert',
+		'2' => 'abgelehnt',
+	],
+	'settlement-from-month' => 'Abrechnung-ab-Monat :Monat',
+	'download-vat-invoice' => 'Download VAT-Rechnung',
+	'show-reservations' => 'Reservierungen anzeigen',
+	'reservation-turnover' => 'Reservierungsumsatz :status',
+	'reservation-fee' => 'Reservierungsprovision :status',
+	'paid-online-reservation-fee' => 'Reservierungsprovision :status paid online',
+	'paid-in-club-reservation-fee' => 'Provision für Reservierungen :status paid at club',
+	'unpaid-reservation-fee' => 'Provisionen für Reservierungen :Status unbezahlt',
+	'tpay-reservation-fee' => 'TPay-Provision für Buchungen :status',
+	'summary' => 'Zusammenfassung',
+	'online-paid-online-reservation-turnover' => 'online-paid-online-reservation-turnover',
+	'subscription-fee' => 'Abonnementgebühr',
+	'marketing-campaign-fee' => 'Gebühr für Marketingkampagne',
+	'sms-fee' => 'SMS-Gebühr',
+	'fee-info' => 'Gebühreninformation',
+	'tpay-fee-single' => 'Provision :paymentProvider auf jede Online-Transaktion',
+	'bookbil-fee' => 'BookGame-Provision',
+];

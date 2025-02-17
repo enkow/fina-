@@ -1,0 +1,43 @@
+.table-component {
+	table {
+		thead {
+			tr {
+				@apply bg-white;
+
+				th {
+					@apply border-r border-r-[rgb(229,231,235)];
+
+					&:last-child {
+						@apply w-10;
+					}
+
+					button {
+						@apply px-3;
+					}
+				}
+			}
+		}
+	}
+
+	tbody {
+		td {
+			@apply border-r border-t border-r-[rgb(229,231,235)] border-t-[rgb(229,231,235)];
+		}
+	}
+
+	nav nav {
+		div,
+		div a,
+		a {
+			@apply mr-0.5 flex h-5 w-5 items-center justify-center rounded-md border-0 p-0;
+		}
+
+		svg {
+			@apply h-4 w-4;
+		}
+
+		div:first-child {
+			@apply bg-gray-3/15;
+		}
+	}
+}

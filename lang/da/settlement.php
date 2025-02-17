@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Afvikling',
+	'plural' => 'Afvikling',
+	'online-payments' => 'Online betalinger',
+	'daily-reports' => 'daglige rapporter',
+	'bookgame-settlements' => 'BookGame-afregning',
+	'status' => [
+		0 => 'afventende',
+		1 => 'accepteret',
+		2 => 'afvist',
+	],
+	'settlement-from-month' => 'Afregning-fra-måned :month',
+	'download-vat-invoice' => 'Download momsfaktura',
+	'show-reservations' => 'Se reservationer',
+	'reservation-turnover' => 'Reservation indtægter :status',
+	'reservation-fee' => 'Reservationskommission :status',
+	'paid-online-reservation-fee' => 'Reservationsprovision :status betalt online',
+	'paid-in-club-reservation-fee' => 'Provision for reservationer :status betalt i klubben',
+	'unpaid-reservation-fee' => 'Provisioner for reservationer :status ubetalt',
+	'tpay-reservation-fee' => 'TPay provision for bookinger :status',
+	'summary' => 'Resumé',
+	'online-paid-online-reservation-turnover' => 'online-betalt-online-reservation-indtægt',
+	'subscription-fee' => 'Abonnementsgebyr',
+	'marketing-campaign-fee' => 'Gebyr for marketingkampagne',
+	'sms-fee' => 'SMS-gebyr',
+	'fee-info' => 'Gebyroplysninger',
+	'tpay-fee-single' => 'Provision :paymentProvider på hver onlinetransaktion',
+	'bookbil-fee' => 'BookGame-kommission',
+];

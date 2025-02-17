@@ -1,0 +1,65 @@
+tags.tagify {
+	@apply border-gray-2 py-0 pl-1.5 text-sm font-medium leading-5 2xl:py-0.5;
+	--tag-bg: #1bc5bd;
+	--tag-text-color: #ffffff;
+	--tag-hover: #1bc5bd;
+	--tags-hover-border-color: #1bc5bd;
+	--tag-pad: 0.3em 0.2em 0.3em 0.6em;
+	--tag-remove-bg: #1bc5bd;
+	--tag-remove-btn-color: #ffffff;
+	--tag-remove-btn-bg--hover: transparent;
+	--tags-focus-border-color: #1bc5bd;
+
+	tag {
+		@apply mx-1.5;
+
+		&:hover:not([readonly]) div::before {
+			@apply scale-105;
+			--tag-bg-inset: -0px;
+			--tag-bg: var(--tag-hover);
+		}
+	}
+}
+tags.tagify.tagify-condensed {
+	--tag-pad: 0.3em 0.1em 0.3em 0.5em;
+
+	tag {
+		@apply mx-0.5;
+	}
+
+	.tagify__input {
+		@apply min-w-[20px] !pl-0;
+	}
+
+	&[disabled] {
+		@apply bg-gray-2 opacity-100;
+
+		tag {
+			@apply hidden;
+		}
+	}
+}
+
+.tagify__dropdown {
+	.tagify__dropdown__item {
+		@apply !m-1 inline-block rounded-sm border border-solid border-gray-2 bg-gray-1 px-2 py-1.25 align-middle text-sm text-black transition-none;
+		@apply hover:!border-brand-dark hover:!bg-brand-base hover:text-white;
+	}
+
+	.tagify__dropdown__footer {
+		@apply text-[0px];
+	}
+
+	.tagify__dropdown__footer:after {
+		@apply ml-2 text-[10px];
+		content: 'I więcej. Doprecyzuj swoje wyszukiwanie.';
+	}
+
+	.tagify__tag__removeBtn {
+		@apply -mt-2 mr-0.25 h-4.5 w-4.5 text-base;
+
+		&.tagify__tag__removeBtn:hover + div > span {
+			@apply opacity-80;
+		}
+	}
+}

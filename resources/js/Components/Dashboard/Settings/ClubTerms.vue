@@ -1,0 +1,45 @@
+<template>
+	<File
+		:pathPrepend="pathPrepend"
+		:setting="setting"
+		:setting-icon-color="settingIconColor"
+		:placeholder="$t('settings.drop-terms-here')"
+		class="icon-brand"
+		name="club_terms">
+		<template #icon>
+			<svg fill="none" height="21" viewBox="0 0 16 21" width="18" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M15.275 5.68438L10.025 0.653125C9.875 0.509375 9.725 0.4375 9.5 0.4375H2C1.175 0.4375 0.5 1.08437 0.5 1.875V19.125C0.5 19.9156 1.175 20.5625 2 20.5625H14C14.825 20.5625 15.5 19.9156 15.5 19.125V6.1875C15.5 5.97188 15.425 5.82812 15.275 5.68438ZM9.5 2.1625L13.7 6.1875H9.5V2.1625ZM14 19.125H2V1.875H8V6.1875C8 6.97813 8.675 7.625 9.5 7.625H14V19.125Z"
+					fill="#1BC5BD" />
+				<path d="M3.5 14.8125H12.5V16.25H3.5V14.8125ZM3.5 10.5H12.5V11.9375H3.5V10.5Z" fill="#1BC5BD" />
+			</svg>
+		</template>
+
+		<template #title>
+			{{ $t('settings.club-terms') }}
+		</template>
+
+		<template #noFileAlert>
+			{{ $t('settings.club-terms-no-file-alert') }}
+		</template>
+
+		<p class="block w-full">
+			{{ $t('settings.club-terms-description') }}
+		</p>
+	</File>
+</template>
+<script lang="ts" setup>
+import File from '@/Components/Dashboard/Settings/Types/File.vue';
+import { SettingEntity } from '@/Types/responses';
+
+const props = withDefaults(
+	defineProps<{
+		setting: SettingEntity;
+		pathPrepend: string;
+		settingIconColor: string;
+	}>(),
+	{
+		settingIconColor: 'info',
+	},
+);
+</script>

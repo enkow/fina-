@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Settlement',
+	'plural' => 'Settlement',
+	'online-payments' => 'Online payments',
+	'daily-reports' => 'daily-reports',
+	'bookgame-settlements' => 'BookGame settlement',
+	'status' => [
+		'0' => 'pending',
+		'1' => 'accepted',
+		'2' => 'rejected',
+	],
+	'settlement-from-month' => 'Settlement-from-month :month',
+	'download-vat-invoice' => 'Download VAT Invoice',
+	'show-reservations' => 'View reservations',
+	'reservation-turnover' => 'Reservation revenue :status',
+	'reservation-fee' => 'Reservation commission :status',
+	'paid-online-reservation-fee' => 'Reservation commission :status paid online',
+	'paid-in-club-reservation-fee' => 'Commission for reservations :status paid at club',
+	'unpaid-reservation-fee' => 'Commissions for reservations :status unpaid',
+	'tpay-reservation-fee' => 'TPay commission for bookings :status',
+	'summary' => 'Summary',
+	'online-paid-online-reservation-turnover' => 'online-paid-online-reservation-revenue',
+	'subscription-fee' => 'Subscription fee',
+	'marketing-campaign-fee' => 'Marketing campaign fee',
+	'sms-fee' => 'SMS fee',
+	'fee-info' => 'fee information',
+	'tpay-fee-single' => 'Commission :paymentProvider on each online transaction',
+	'bookbil-fee' => 'BookGame commission',
+];

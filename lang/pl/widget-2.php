@@ -1,0 +1,56 @@
+<?php
+
+return [
+	'book' => 'Zarezerwuj',
+	'system-delivered-by' => 'System dostarczony przez',
+	'start-over' => 'Zacznij od nowa',
+	'previous-step' => 'Poprzedni krok',
+	'next-step' => 'Następny krok',
+	'choose-all-required-data' => 'Podaj wszystkie wymagane dane',
+	'choose-a-special-offer' => 'Wybierz promocję',
+	'choose-date' => 'Wybierz datę',
+	'booking-details' => 'Szczegóły rezerwacji',
+	'select-an-hour' => 'Wybierz godzinę',
+	'empty-search-criteria' =>
+		'Przepraszamy, nie znaleźliśmy wyników wyszukiwania odpowiadających Twoim kryteriom. Spróbuj zmienić kryteria wyszukiwania.',
+	'back' => 'Wróć',
+	'choose-addons' => 'Wybierz dodatki',
+	'sign-in-to-pay' => 'Zaloguj się, aby zapłacić',
+	'sign-in' => 'Zaloguj się',
+	'sign-up' => 'Zarejestruj się',
+	'forgot-password' => 'Zapomniałem hasła',
+	'email' => 'Email',
+	'password' => 'Hasło',
+	'first-name' => 'Imię',
+	'last-name' => 'Nazwisko',
+	'accept' => 'Akceptuję',
+	'terms' => 'warunki',
+	'and' => 'i',
+	'privacy-policy' => 'politykę prywatności',
+	'marketing-consent' => 'zgodę marketingową',
+	'forgot-password-success' => 'Na Twój adres email przesłaliśmy link do zresetowania hasła. Nie zamykaj tej karty i powróć do niej po
+	zakończeniu procesu zmiany hasła.',
+	'forgot-password-content' => 'Zapomniałeś hasła? Nic straconego. Na Twojego maila prześlemy link, za pomocą którego będziesz mógł
+	ustawić nowe hasło na swoim koncie.',
+	'send-link' => 'Wyślij link',
+	'back-to-login' => 'Wróć do logowania',
+	'verify-yourself-to-complete-your-reservation' => 'Zweryfikuj się, aby dokończyć rezerwację.',
+	'resubmit' => 'Prześlij ponownie',
+	'verification-link-has-been-resent' => 'Link weryfikacyjny został ponownie wysłany',
+	'account-verification-success' => 'Twoje konto zostało poprawnie zarejestrowane. Na Twój adres email przesłaliśmy maila z linkiem
+	weryfikacyjnym.',
+	'enter-your-order-details' => 'Wprowadź dane do zamówienia',
+	'phone-short' => 'Tel',
+	'continue' => 'Kontynuuj',
+	'online-payment' => 'Zarezerwuj i zapłać online',
+	'offline-payment' => 'Zarezerwuj i zapłać w klubie',
+	'payment-alert' =>
+		'Na opłacenie rezerwacji masz 5 minut.<br>Pamiętaj - Potwierdzenie rezerwacji otrzymasz na swój adres mailowy.',
+	'message' => 'Wiadomość',
+	'coupon-code' => 'Kod rabatowy',
+	'correct-code' => 'poprawny kod',
+	'incorrect-code' => 'niepoprawny kod',
+	'status-of-your-booking' => 'Status twojej rezerwacji',
+	'status-alert' =>
+		'Aby śledzić i zarządzać rezerwacjami, przejdź do panelu użytkownika.<br>Potwierdzenie rezerwacji otrzymasz również na swój adres email.',
+];

@@ -1,0 +1,35 @@
+<?php
+
+return [
+	'singular' => 'Rabatkupon',
+	'singular_value' => 'Rabatkupon: :værdi',
+	'discount-applied' => 'Anvendt rabat',
+	'plural' => 'Rabatkuponer',
+	'index-title' => 'Her kan du oprette nye rabatkuponer',
+	'index-description' => '',
+	'add-discount-code' => 'Tilføj rabatkupon',
+	'index-help' =>
+		'I dette afsnit kan du definere rabatkuponer. De kan bruges af både online- og on-site-bookingkunder.',
+	'code-name' => 'Kode navn',
+	'code-quantity' => 'Antal rabatkoder',
+	'code-quantity-user' => 'Antal rabatkoder pr. bruger',
+	'set-as-active' => 'Indstillet som aktiv',
+	'code' => 'Kupon',
+	'by' => 'Af',
+	'limit-user' => 'Grænse/bruger',
+	'used-limit' => 'Brugt/pool',
+	'expires' => 'Udløber',
+	'no-discount-code' => 'Ingen kupon',
+	'copy' => 'kopi',
+	'enter-quantity' => 'Indtast antal',
+	'enter-discount' => 'Indtast rabat',
+	'enter-name' => 'Indtast kode',
+	'types' => [
+		0 => 'procentdel',
+		1 => 'beløb',
+	],
+	'successfully-stored' => 'Ny rabatkupon tilføjet',
+	'successfully-destroyed' => 'Vellykket slettet rabatkupon',
+	'successfully-updated' => 'Korrekt opdateret rabatkupon',
+	'successfully-cloned' => 'Kopieret rabatkode',
+];

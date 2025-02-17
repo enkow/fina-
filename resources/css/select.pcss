@@ -1,0 +1,328 @@
+:root {
+	--vs-dropdown-min-width: 120px;
+	--vs-dropdown-max-height: 400px;
+
+	--vs-disabled-bg: #cfcfcf;
+}
+
+.vs__selected {
+	@apply !static ml-0 h-10 !px-4.5 py-2.5 text-base font-normal text-gray-7 !opacity-100;
+}
+
+.vs__search {
+	@apply h-10 !border-none !bg-transparent !px-4.5 py-2.5 !pr-0 pr-0 text-base font-normal caret-transparent !ring-0;
+}
+
+.vs__header {
+	@apply mx-4.5 mb-3 mt-4 text-base;
+}
+
+.vs__dropdown-menu {
+	@apply border border-brand-base pb-0 pt-0;
+
+	&::-webkit-scrollbar-track {
+		@apply bg-transparent;
+	}
+
+	&::-webkit-scrollbar {
+		@apply w-1.5 bg-transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply rounded-md bg-gray-2/70;
+	}
+}
+
+.vs__dropdown-option {
+	@apply p-0 text-sm font-light;
+}
+
+.vs__dropdown-option--highlight {
+	@apply bg-brand-base;
+}
+
+.vs__actions {
+	@apply mr-3.5;
+}
+
+.vs__open-indicator {
+	@apply fill-gray-7 transition;
+}
+
+.vs__dropdown-option__content {
+	@apply mx-4.5 border-t border-solid border-gray-3/40 py-3 text-sm font-light;
+}
+
+.vs__dropdown-toggle {
+	@apply h-12 rounded-md border border-gray-2 pb-0.5;
+}
+
+.vs__dropdown-toggle:hover {
+	@apply !border-brand-base;
+}
+
+.no-header .vs__dropdown-menu .vs__dropdown-option:first-child .vs__dropdown-option__content:first-child {
+	@apply border-0;
+}
+
+.vs__open-indicator {
+	@apply rotate-180;
+}
+
+.vs--open .vs__open-indicator {
+	@apply rotate-0;
+}
+
+.vs--disabled {
+	@apply rounded-md;
+}
+.vs--disabled,
+.vs--disabled .vs__dropdown-toggle {
+	@apply !bg-gray-2;
+}
+
+/*
+    Toggles
+ */
+
+.toggle-info-base {
+	.vs__dropdown-toggle {
+		@apply bg-info-base text-white;
+	}
+
+	.vs__selected {
+		@apply text-white;
+	}
+}
+
+.toggle-info-light {
+	.vs__dropdown-toggle {
+		@apply bg-info-light text-info-dark;
+	}
+
+	.vs__selected {
+		@apply text-info-dark;
+	}
+}
+
+.toggle-hover-info-base {
+	.vs__dropdown-toggle {
+		@apply transition hover:bg-info-base;
+
+		&:hover .vs__selected {
+			@apply text-white;
+		}
+	}
+}
+
+.toggle-bold,
+.vs__selected {
+	.vs__search,
+	.vs__selected {
+		@apply font-semibold;
+	}
+}
+
+.toggle-text-sm,
+.vs__selected {
+	.vs__search,
+	.vs__selected {
+		@apply text-sm;
+	}
+}
+
+.toggle-center,
+.vs__selected {
+	.vs__search,
+	.vs__selected {
+		@apply text-center;
+	}
+}
+
+.toggle-icon-download {
+	.vs__dropdown-toggle:before {
+		@apply -mr-3 ml-4.5 mt-4 h-4 w-4 min-w-[16px] 2xl:mt-4.25;
+		@apply bg-[url('@as/images/icons/WhiteDownloadIcon.png')] content-[''];
+	}
+}
+
+.toggle-border-none {
+	.vs__dropdown-toggle {
+		@apply border-0;
+	}
+}
+
+/*
+    Open indicators
+ */
+
+.open-indicator-none {
+	.vs__open-indicator {
+		@apply hidden;
+	}
+	.vs__actions {
+		@apply hidden;
+	}
+}
+
+.open-indicator-white {
+	.vs__open-indicator {
+		@apply fill-white;
+	}
+}
+
+.open-indicator-info-dark {
+	.vs__open-indicator {
+		@apply fill-info-dark;
+	}
+}
+
+/* hover */
+
+.open-indicator-hover-white {
+	.vs__dropdown-toggle:hover .vs__open-indicator {
+		@apply fill-white;
+	}
+}
+
+/*
+    Dropdown
+ */
+
+.dropdown-info-base {
+	.vs__dropdown-menu {
+		@apply border-info-base;
+	}
+
+	.vs__dropdown-option--highlight {
+		@apply bg-info-base;
+	}
+
+	.vs__dropdown-toggle {
+		@apply border-info-base;
+	}
+}
+
+.dropdown-separate {
+	.vs__dropdown-menu {
+		@apply mt-3 rounded-md border-solid;
+	}
+
+	&.vs--open .vs__dropdown-toggle {
+		@apply !rounded-b-md;
+	}
+}
+
+/*
+    Margins
+ */
+
+.margins-sm {
+	.vs__selected,
+	.vs__search {
+		@apply !px-2.25;
+	}
+
+	.vs__header,
+	.vs__dropdown-option__content {
+		@apply mx-2.25;
+	}
+}
+
+.margins-lg {
+	.vs__selected,
+	.vs__search {
+		@apply !px-8;
+	}
+
+	.vs__header,
+	.vs__dropdown-option__content {
+		@apply mx-4 px-4;
+	}
+}
+
+/*
+    Datepicker select
+ */
+
+.simpleDatepicker {
+	.vs__selected {
+		@apply !pl-2.5 !pr-0 pt-3.5 !text-sm font-medium;
+	}
+}
+
+.datepicker-dropdown {
+	@apply w-30;
+
+	.vs__dropdown-toggle {
+		@apply w-30;
+	}
+
+	.vs__dropdown-option__content {
+		@apply mx-3.5;
+	}
+
+	.vs--open {
+		-webkit-box-shadow: 0px 0px 29px -15px rgba(66, 68, 90, 1);
+		-moz-box-shadow: 0px 0px 29px -15px rgba(66, 68, 90, 1);
+		box-shadow: 0px 0px 29px -15px rgba(66, 68, 90, 1);
+		@apply rounded-t-md;
+	}
+
+	.vs__dropdown-menu {
+		@apply mx-0 w-30 min-w-fit overflow-x-hidden border-0;
+	}
+
+	.vs__dropdown-option {
+		@apply text-xs;
+	}
+
+	.vs__dropdown-option__content {
+		@apply py-1.5;
+	}
+
+	.vs__actions {
+		@apply !mr-0 text-right;
+	}
+}
+
+/*
+    Input append styles
+ */
+
+.input-append {
+	.vs__dropdown-toggle {
+		@apply rounded-none rounded-r-md border-l-0 border-gray-3 bg-gray-2/50;
+	}
+	.vs__selected {
+		@apply !pr-0;
+	}
+}
+
+/*
+    Styles
+ */
+
+.select-perPageSelector {
+	.vs__dropdown-toggle {
+		@apply h-7;
+	}
+	.vs__selected {
+		@apply h-5 w-7 py-0 !pl-1.5 !pr-0 text-center;
+	}
+	.vs__open-indicator svg {
+		@apply h-2.5 w-2.5;
+	}
+	.vs__actions {
+		@apply mr-1;
+	}
+	.vs__search {
+		@apply hidden;
+	}
+	.vs__dropdown-menu {
+		@apply min-w-0;
+	}
+	.vs__dropdown-option__content {
+		@apply ml-2.5 mr-2.5 py-1 text-sm font-medium;
+	}
+}

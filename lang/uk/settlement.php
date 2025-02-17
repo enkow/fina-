@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'singular' => 'Поселення',
+	'plural' => 'Поселення',
+	'online-payments' => 'Онлайн-платежі',
+	'daily-reports' => 'щоденні звіти',
+	'bookgame-settlements' => 'Розрахунок BookGame',
+	'status' => [
+		0 => 'на розгляді',
+		1 => 'прийнято',
+		2 => 'відхилено',
+	],
+	'settlement-from-month' => 'Розрахунок-з-місяця :month',
+	'download-vat-invoice' => 'Завантажити рахунок-фактуру з ПДВ',
+	'show-reservations' => 'Переглянути бронювання',
+	'reservation-turnover' => 'Дохід від бронювання :status',
+	'reservation-fee' => 'Комісія за бронювання :status',
+	'paid-online-reservation-fee' => 'Комісія за бронювання: статус оплачено онлайн',
+	'paid-in-club-reservation-fee' => 'Комісія за бронювання :status сплачено в клубі',
+	'unpaid-reservation-fee' => 'Комісії за бронювання :status не сплачено',
+	'tpay-reservation-fee' => 'Сплатити комісію за бронювання :status',
+	'summary' => 'Підсумок',
+	'online-paid-online-reservation-turnover' => 'онлайн-оплачене-онлайн-бронювання-дохід',
+	'subscription-fee' => 'Абонентська плата',
+	'marketing-campaign-fee' => 'Плата за маркетингову кампанію',
+	'sms-fee' => 'Плата за SMS',
+	'fee-info' => 'інформація про збори',
+	'tpay-fee-single' => 'Комісія :paymentProvider за кожну онлайн-транзакцію',
+	'bookbil-fee' => 'Комісія BookGame',
+];
